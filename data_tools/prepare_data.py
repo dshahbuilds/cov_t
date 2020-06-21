@@ -13,10 +13,10 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--combine_pneumonia", action='store_true', default=False)
 args = parser.parse_args()
 
-COVID19_DATA_PATH = "./data/covid19"
-COVID19_IMGS_PATH = "./covid-chestxray-dataset"
-PNEUMONIDA_DATA_PATH = "./chest-xray-pneumonia"
-DATA_PATH = "./data"
+COVID19_DATA_PATH = "./CovidAID/data/covid19"
+COVID19_IMGS_PATH = "./CovidAID/covid-chestxray-dataset"
+PNEUMONIDA_DATA_PATH = "./CovidAID/chest-xray-pneumonia"
+DATA_PATH = "./CovidAID/data"
 
 # Assert that the data directories are present
 for d in [COVID19_DATA_PATH, COVID19_IMGS_PATH, PNEUMONIDA_DATA_PATH, DATA_PATH]:
