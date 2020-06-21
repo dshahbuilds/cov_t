@@ -9,11 +9,11 @@ import pandas as pd
 from collections import Counter 
 
 # Dataset path
-COVID_DATA_PATH='./covid-chestxray-dataset'
+COVID_DATA_PATH='./Covid/AID/covid-chestxray-dataset'
 METADATA_CSV = os.path.join(COVID_DATA_PATH, 'metadata.csv')
-TRAIN_FILE = './data/covid19/train_list.txt'
-VAL_FILE = './data/covid19/val_list.txt'
-TEST_FILE = './data/covid19/test_list.txt'
+TRAIN_FILE = './CovidAID/data/covid19/train_list.txt'
+VAL_FILE = './CovidAID/data/covid19/val_list.txt'
+TEST_FILE = './CovidAID/data/covid19/test_list.txt'
 
 # Load patient stats
 covids = dict()
