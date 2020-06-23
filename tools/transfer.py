@@ -9,8 +9,8 @@ import argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--combine_pneumonia", action='store_true', default=False)
-parser.add_argument("--chexnet_model_checkpoint", "--old", type=str, default="./data/CheXNet_model.pth.tar")
-parser.add_argument("--covidaid_model_trained_checkpoint", "--new", type=str, default="./models/CovidAID_transfered.pth.tar")
+parser.add_argument("--chexnet_model_checkpoint", "--old", type=str, default="./CovidAID/data/CheXNet_model.pth.tar")
+parser.add_argument("--covidaid_model_trained_checkpoint", "--new", type=str, default="./CovidAID/models/CovidAID_transfered.pth.tar")
 args = parser.parse_args()
 
 chexnet_model_checkpoint = args.chexnet_model_checkpoint
