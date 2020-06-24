@@ -416,10 +416,10 @@ if __name__ == '__main__':
     # parser.add_argment("--torch_version", "--tv", choices=["0.3", "new"], default="0.3")
     args = parser.parse_args()
 
-    TRAIN_IMAGE_LIST = './data/train.txt'
-    VAL_IMAGE_LIST = './data/val.txt'
-    TEST_IMAGE_LIST = './data/test.txt'
-    TEST_DIR = './data/samples'
+    TRAIN_IMAGE_LIST = './CovidAID/data/train.txt'
+    VAL_IMAGE_LIST = './CovidAID/data/val.txt'
+    TEST_IMAGE_LIST = './CovidAID/data/test.txt'
+    TEST_DIR = './CovidAID/data/samples'
 
     # Initializes the distributed backend which will take care of sychronizing nodes/GPUs
     if args.local_rank is not None:
